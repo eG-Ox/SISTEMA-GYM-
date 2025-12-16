@@ -68,6 +68,3 @@ class GeneradorReportes:
 
         return resumen
 
-
-
-
