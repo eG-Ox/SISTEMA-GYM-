@@ -63,11 +63,11 @@ SISTEMA_INVENTARIO/
 #### 4.2 Crear ramas del proyecto
 
 ```bash
-    git branch Lizarzaburu/models
-    git branch Pascacio/repositories
-    git branch Escobedo/services
-    git branch Mallma/utils
-    git branch Tantavilca/tests
+    git branch Miñano/models
+    git branch Huamani/repositories
+    git branch Pillaca/services
+    git branch Castro/utils
+    git branch Miñano/tests
 ```
 
 #### 4.3 Cambiarte a la rama
