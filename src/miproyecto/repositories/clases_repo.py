@@ -1,4 +1,4 @@
-Class ClasesRepo:
+class ClasesRepo:
     def __init__(self):
         self.clases = []
         self.next_id = 1
@@ -11,3 +11,6 @@ Class ClasesRepo:
 
     def listar(self):
         return self.clases
+
+    def listar_por_fecha(self, fecha):
+        return [c for c in self.clases if c.fecha == fecha]

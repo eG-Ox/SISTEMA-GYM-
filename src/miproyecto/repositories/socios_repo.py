@@ -1,12 +1,18 @@
-class AsistenciasRepo:
+class SociosRepo:
     def __init__(self):
-        self.asistencias = []
+        self.socios = []
 
-    def agregar(self, asistencia):
-        self.asistencias.append(asistencia)
+    def agregar(self, socio):
+        self.socios.append(socio)
 
-    def historial_por_socio(self, socio):
-        return [a for a in self.asistencias if a.socio.dni == socio.dni]
+    def buscar_por_dni(self, dni):
+        return next((s for s in self.socios if s.dni == dni), None)
 
-    def asistencias_del_dia(self, fecha):
-        return [a for a in self.asistencias if a.fecha == fecha]
+    def listar(self):
+        return self.socios
+
+    def listar_activos(self):
+        return [s for s in self.socios if s.estado_activo]
+
+    def listar_inactivos(self):
+        return [s for s in self.socios if not s.estado_activo]
